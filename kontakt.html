@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Pogotowie komputerowe</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="baner">
+        <img src="animacja.gif">
+      </div>
+      <div class="menu">
+        <a href="index.html">O nas</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="glowny">
+        <div class="col1"></div>
+        <div class="col2">
+          <h3>Formularz kontaktowy</h3>
+          <table>
+            <form name="myForm">
+            <tr align="left">
+              <th>Imie:</th>
+              <th><input name="imie"></th>
+            </tr>
+            <tr align="left">
+                <th>Nazwisko:</th>
+                <th><input name="nazwisko"></th>
+            </tr>
+            <tr align="left">
+                <th>E-mail:</th>
+                <th><input name="mail"></th>
+            </tr>
+            <tr align="left">
+                <th>Usluga:</th>
+                <th>
+                  <select name="usluga"> 
+                    <option>naprawa komputera</option>
+                    <option>odzyskiwanie danych</option>
+                    <option>problemy z oprogramowaniem</option>
+                    <optiop>konfiguracja sieci LAN</optiop>
+                    <option>inne</option>
+                  </select>
+                </th>
+            </tr>
+            <tr align="left">
+              <th></th>
+              <th><input type="checkbox" checked name="copy">Wyślij kopię wiadomości</th>
+            </tr>
+            <tr align="left">
+              <th></th>
+              <th><button type="reset" class="Resetuj" onclick="clear();">Resetuj</button>
+                  <button type="button" id="button" class="Prześlij" onclick="complete();">Prześlij</button>
+              </th>
+            </tr>
+          </form>
+          </table>
+          <div id='result'></div>
+        </div>
+        <div class="col3"></div>
+      </div>
+      <div class="stopka">
+        <p>Autor strony: <b>12345678910</b></p>
+      </div>
+    </section>
+  </body>
+</html>
